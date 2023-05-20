@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rokkitt', serif;
+}
+
+header{
+    background: rgb(11, 148, 186, 1);
+    padding: 1%;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav{
+    width: 80%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header div img{
+    width: 5%;
+    mix-blend-mode: color-burn;
+    margin: 0;
+}
+
+body{
+    background:rgb(241, 246, 249);
+}
+
+#ordenadores{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 75%;
+    margin: 6% auto;
+    padding: 20PX;
+    gap: 15px;
+}
+
+#ordenadores a{
+    text-decoration: none;
+    color: black;
+}
+
+.pc{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 2px black solid;
+    padding: 10px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 70%, rgba(167,167,167,1) 100%);
+}
+
+.pc p{
+    text-align: center;
+    margin: 5% 0;
+    font-size: 17px;
+}
+
+.pc img{
+    width: 60%;
+    margin: 0 auto;
+    background-image: transparent;
+}
+
+footer{
+    background: rgb(11, 148, 186, 1);
+    margin-bottom: 5px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@keyframes animacion {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+footer img{
+    width: 40%;
+    mix-blend-mode: color-burn;
+    animation: animacion 2s ease 0s 3 normal forwards;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer div div{
+    width: 10%;
+}
+
+#social img{
+    width: 20%; 
+}

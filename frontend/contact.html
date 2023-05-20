@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="/asstes/css/style.css">
+        <link rel="stylesheet" href="/asstes/css/contact.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Contacto</h1> 
+                <img src="../asstes/images/logo.png" alt="">
+            </div>
+            <nav>
+                <a href="/index">Inicio</a>
+                <a href="/index/contact">Contacto</a>
+                <a id="crear" href="/index/crear">Crear nuevo ordenador</a>
+                <a id="login" href="/index/login">Login</a>
+                <a id="logout" href="/index/logout">Logout</a>
+                <a id="logout" href="/index/admin">Panel Admin</a>
+            </nav>   
+        </header>
+        <main>
+            <h1>Contacta con nosostros</h1>
+            <form action="" id="contact_form">
+                <div class="input">
+                    <label for="nombre">Nombre: </label>
+                    <input required type="text" name="nombre" id="nombre" placeholder="Pepe">
+                </div>
+                <div class="input">
+                    <label for="apellido">Apellido: </label>
+                    <input required type="text" name="apellido" id="apellido" placeholder="García">
+                </div>
+                <div class="input">
+                    <label for="email">Correo: </label>
+                    <input required type="email" name="email" id="email" placeholder="pepegarcia@pcadmin.com">
+                </div>
+                <div class="input">
+                    <label for="asunto">Asunto: </label>
+                    <input required type="text" name="asunto" id="asunto" placeholder="El ordenador x">
+                </div>
+                <div class="input">
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea required name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Me gustaria..."></textarea>
+                </div>
+                <button id="enviar">Enviar</button>
+
+            </form>
+            <article id="location">
+                <h3>¿Dónde nos encontramos?</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122.903635707075!2d-0.7809525234909818!3d38.48986547064649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63db84d46b46a9%3A0x73419b91f0499489!2sDynamia%20Centro%20Comercial!5e0!3m2!1ses!2ses!4v1683364896215!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </main>
+        <footer>
+            <div>
+                <div>
+                    <img src="../asstes/images/logo.png" alt="">
+                </div>
+                <div>
+                    <p>Todos los derechos reservados</p>
+                <a href="/index/contact"><p>Contacta con nosotros</p></a>
+                </div>
+                <div id="social">
+                    <img src="../asstes/images/insta.png"" alt="">
+                    <img src="../asstes/images/face.png"" alt="">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

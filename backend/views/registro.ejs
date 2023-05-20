@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggin</title>
+    <link rel="stylesheet" href="../asstes/css/loggin.css">
+</head>
+    <body>
+        <div class="loginBox">
+            <a href="/index"><p>Volver</p></a>
+            <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+            <h3>Registrarse</h3>
+            <form action="http://localhost:3000/api/v1/usuarios" method="post">
+                <div class="inputBox"> 
+                    <input id="uname" type="text" name="username" placeholder="Usuario" required  oninvalid="this.setCustomValidity('Este campo es obligatorio y no puede ser vacio')"> 
+                    <input id="pass" type="password" name="pass" placeholder="Contraseña" required>
+                    <input type="password" name="password" placeholder="Contraseña">  
+                </div> 
+                <input type="submit" name="" value="Registrase">
+            </form> 
+            <div class="text-center">
+                <a href="/index/login">Iniciar Sesión</a>
+            </div>
+            
+        </div>
+    </body>
+</html>
